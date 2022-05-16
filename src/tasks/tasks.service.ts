@@ -6,8 +6,8 @@ import { TaskRepository } from './task.repository';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Task } from './task.entity';
 import { DeleteResult } from 'typeorm';
-import { User } from 'src/auth/user.entity';
-import { GetUser } from 'src/auth/get-user-decorator';
+import { User } from '../auth/user.entity';
+import { GetUser } from '../auth/get-user-decorator';
 
 @Injectable()
 export class TasksService {
